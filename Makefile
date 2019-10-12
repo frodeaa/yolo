@@ -8,7 +8,7 @@ GOSRC!=find . -name '*.go'
 yolo: $(GOSRC)
 	$(DEP) ensure
 	$(GO) build $(GOFLAGS) \
-		-ldflags "-X main.Version=$(VERSION)" \
+		-ldflags "-X main.VERSION=$(VERSION)" \
 		-o $@
 
 dep:

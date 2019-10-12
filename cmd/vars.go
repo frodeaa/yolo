@@ -6,5 +6,6 @@ var (
 )
 
 var run = struct {
-	version bool
+	version         bool
+	monocromeOutput bool
 }{}

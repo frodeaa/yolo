@@ -7,7 +7,7 @@ import (
 
 var versionCmd = &cobra.Command{
 	Use:   "version",
-	Short: "Show yolo version",
+	Short: "show " + APP + " version",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println(APP + " " + VERSION)
 	},

@@ -33,4 +33,5 @@ func Execute(version string) {
 func init() {
 	rootCmd.Flags().BoolVarP(&run.version, "version", "v", false, "print current/running version")
 	rootCmd.AddCommand(versionCmd)
+	rootCmd.AddCommand(listStacks)
 }

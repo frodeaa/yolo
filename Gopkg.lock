@@ -2,12 +2,69 @@
 
 
 [[projects]]
+  digest = "1:0e52ac3516eb27e1167a43daa5b77b06999ea47c3e11d03c75481425f289647f"
+  name = "github.com/aws/aws-sdk-go"
+  packages = [
+    "aws",
+    "aws/awserr",
+    "aws/awsutil",
+    "aws/client",
+    "aws/client/metadata",
+    "aws/corehandlers",
+    "aws/credentials",
+    "aws/credentials/ec2rolecreds",
+    "aws/credentials/endpointcreds",
+    "aws/credentials/processcreds",
+    "aws/credentials/stscreds",
+    "aws/csm",
+    "aws/defaults",
+    "aws/ec2metadata",
+    "aws/endpoints",
+    "aws/request",
+    "aws/session",
+    "aws/signer/v4",
+    "internal/ini",
+    "internal/sdkio",
+    "internal/sdkmath",
+    "internal/sdkrand",
+    "internal/sdkuri",
+    "internal/shareddefaults",
+    "private/protocol",
+    "private/protocol/json/jsonutil",
+    "private/protocol/query",
+    "private/protocol/query/queryutil",
+    "private/protocol/rest",
+    "private/protocol/xml/xmlutil",
+    "service/cloudformation",
+    "service/sts",
+    "service/sts/stsiface"
+  ]
+  pruneopts = "UT"
+  revision = "8b44c74850c51562a4360837e9e4d6e7c47b7d81"
+  version = "v1.25.11"
+
+[[projects]]
+  digest = "1:fdd0bf07f642ecb910c25bf033a3715ee16573135dc6ed59661253e2d236f953"
+  name = "github.com/gookit/color"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "9bd56868939d658276cca2e9a0266ca9e29974c4"
+  version = "v1.2.0"
+
+[[projects]]
   digest = "1:870d441fe217b8e689d7949fef6e43efbc787e50f200cb1e70dbca9204a1d6be"
   name = "github.com/inconshreveable/mousetrap"
   packages = ["."]
   pruneopts = "UT"
   revision = "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
   version = "v1.0"
+
+[[projects]]
+  digest = "1:bb81097a5b62634f3e9fec1014657855610c82d19b9a40c17612e32651e35dca"
+  name = "github.com/jmespath/go-jmespath"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c2b33e84"
 
 [[projects]]
   digest = "1:e096613fb7cf34743d49af87d197663cfccd61876e2219853005a57baedfa562"
@@ -28,6 +85,12 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/spf13/cobra"]
+  input-imports = [
+    "github.com/aws/aws-sdk-go/aws",
+    "github.com/aws/aws-sdk-go/aws/session",
+    "github.com/aws/aws-sdk-go/service/cloudformation",
+    "github.com/gookit/color",
+    "github.com/spf13/cobra"
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
